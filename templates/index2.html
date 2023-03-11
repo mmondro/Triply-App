@@ -1,0 +1,164 @@
+<!DOCTYPE html><!--  This site was created in Webflow. https://www.webflow.com  -->
+<!--  Last Published: Sun Jan 08 2023 20:08:31 GMT+0000 (Coordinated Universal Time)  -->
+<html data-wf-page="63b48e3b46c1a2da2e78dffe" data-wf-site="63b48e3b46c1a276e978dffd">
+<head>
+  <meta charset="utf-8">
+  <title>AI Web Application</title>
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <meta content="Webflow" name="generator">
+  <link href="static/css/normalize.css" rel="stylesheet" type="text/css">
+  <link href="static/css/webflow.css" rel="stylesheet" type="text/css">
+  <link href="static/css/ai-web-application.webflow.css" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" type="text/javascript"></script>
+  <script type="text/javascript">WebFont.load({  google: {    families: ["Open Sans:300,300italic,400,400italic,600,600italic,700,700italic,800,800italic"]  }});</script>
+  <!-- [if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" type="text/javascript"></script><![endif] -->
+  <script type="text/javascript">!function(o,c){var n=c.documentElement,t=" w-mod-";n.className+=t+"js",("ontouchstart"in o||o.DocumentTouch&&c instanceof DocumentTouch)&&(n.className+=t+"touch")}(window,document);</script>
+  <link href="static/images/favicon.ico" rel="shortcut icon" type="image/x-icon">
+  <link href="static/images/webclip-1.png" rel="apple-touch-icon">
+</head>
+<body class="body">
+  <div class="framerootrootroot">
+    <div class="newgroup"><img src="https://file.rendit.io/n/wn3UOB02IcCrVKxHShQB.png" loading="lazy" width="675" height="450" alt="Image1" class="image1"></div>
+  </div>
+  <div class="framerootrootroot-2">
+    <div class="whiteflexcolumn-2">
+      <div class="text-block">AI Powered Hero Copy Generator</div>
+
+      <div class="flexcolumn-2">
+        {% if result %}
+        <div class="paragraph5-2">{{ result }}</div>
+        <script>
+  // Select the element with the class "paragraph5-2"
+  var element = document.querySelector(".paragraph5-2");
+  // Get the text content of the element
+  var text = element.textContent;
+  // Initialize an empty string to store the typed text
+  var typedText = "";
+  // Initialize a counter to keep track of the current character
+  var counter = 0;
+  // Set the interval to a value of your choosing (in this case, 50 milliseconds)
+  var interval = setInterval(function() {
+    // Add the current character to the typed text
+    typedText += text[counter];
+    // Update the element's text content with the typed text
+    element.textContent = typedText;
+    // Increment the counter
+    counter++;
+    // If the counter is equal to the length of the text, clear the interval
+    if (counter === text.length) {
+      clearInterval(interval);
+    }
+  }, 25);
+</script>
+
+
+        {% else %}
+        <div class="paragraph5-2">Let AI Power Your Copy. Make Your Website Stand Out.</div>
+        {% endif %}
+
+        {% if result_sub %}
+        <div class="paragraph6-2">{{ result_sub }}</div>
+
+
+
+
+
+        {% else %}
+        <div class="paragraph6-2">Experience the power of AI-driven copywriting with our tool, trained on proven techniques to deliver top-quality website content every time</div>
+        {% endif %}
+
+        {% if result_call %}
+        <div class="tropicalrainforestflexcolumn-2">
+          <div class="text8-2">{{ result_call }}</div>
+        </div>
+        {% else %}
+        <div class="tropicalrainforestflexcolumn-2">
+          <div class="text8-2">Try it Out</div>
+        </div>
+        {% endif %}
+
+        <div class="flexrow-2"></div>
+      </div>
+
+      <div class="form-block w-form">
+        <form action="/" method="post" class="form w-clearfix" id="input-field" name="wf-form-Input-Field" data-name="Input Field">
+          {% if business_description %}
+           <input
+                  type="text"
+                  id="input"
+                  name="business_description"
+                  placeholder="Enter business description"
+                  value="{{ business_description }}"
+                  class="text-field w-input"
+                  maxlength="256"
+                  required />
+          {% else %}
+          <input
+                  type="text"
+                  name="business_description"
+                  placeholder="Enter business description"
+                  class="text-field w-input"
+                  maxlength="256"
+                  required />
+          {% endif %}
+          <input type="submit" value="Generate Copy" class="submit-button submit-button-2 w-button"/>
+        </form>
+
+      </div>
+    </div>
+      <!-- [if lte IE 9]><img class="websites-bg" src="static/images/WebsiteTile.png" alt="">-->
+  </div>
+  <div class="section wf-section">
+    <section class="uui-section_layout16">
+      <div class="uui-page-padding">
+        <div class="uui-container-large">
+          <div class="uui-padding-vertical-xhuge">
+            <h1 class="heading">What&#x27;s Above the Fold?</h1>
+            <div class="w-layout-grid uui-layout16_component">
+              <div class="uui-layout16_content">
+                <div class="w-layout-grid uui-layout16_item-list">
+                  <div class="uui-layout16_item">
+                    <h3 class="uui-heading-xxsmall">Header</h3>
+                    <div class="uui-space-xxsmall"></div>
+                    <div class="uui-text-size-medium">The header should fully describe the product and be easily understood by only reading the header text. It should convey the main features and benefits, attracting potential customers.</div>
+                  </div>
+                  <div class="uui-layout16_item">
+                    <h3 class="uui-heading-xxsmall">Subheader</h3>
+                    <div class="uui-space-xxsmall"></div>
+                    <div class="uui-text-size-medium">Additional details about the product can be provided to persuade the visitor to take action, such as making a purchase. It is important to strike a balance between providing enough information to be helpful, but not overwhelming the visitor with unnecessary details.</div>
+                    <div class="uui-button-row">
+                      <a data-w-id="21ca3cd4-8431-ccd4-47d4-413e7e4f0bd3" href="#" class="uui-button-link w-inline-block"></a>
+                    </div>
+                  </div>
+                  <div class="uui-layout16_item">
+                    <h3 class="uui-heading-xxsmall">Call to Action</h3>
+                    <div class="uui-space-xxsmall"></div>
+                    <div class="uui-text-size-medium">The desired action for the visitor (e.g. sign up, purchase) should be concise and include an incentive to encourage them to take it. The button and incentive should be clear and compelling.</div>
+                    <div class="uui-button-row">
+                      <a data-w-id="21ca3cd4-8431-ccd4-47d4-413e7e4f0be2" href="#" class="uui-button-link w-inline-block"></a>
+                    </div>
+                  </div>
+                  <div class="uui-layout16_item">
+                    <h3 class="uui-heading-xxsmall">Social Proof</h3>
+                    <div class="uui-space-xxsmall"></div>
+                    <div class="uui-text-size-medium">Including reputable and relevant logos or mentions of press coverage or well-known customers can establish credibility and trust, increasing the chances of a purchase</div>
+                    <div class="uui-button-row">
+                      <a data-w-id="21ca3cd4-8431-ccd4-47d4-413e7e4f0bf1" href="#" class="uui-button-link w-inline-block"></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="uui-layout16_image-wrapper"><img src="static/images/macbook-mockup-01.png" loading="lazy" width="1440" sizes="(max-width: 991px) 100vw, 768px" alt="Dashboard mockup" srcset="static/images/macbook-mockup-01-p-500.png 500w, static/images/macbook-mockup-01-p-800.png 800w, static/images/macbook-mockup-01-p-1080.png 1080w, static/images/macbook-mockup-01.png 1920w" class="uui-layout16_image"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=63b48e3b46c1a276e978dffd" type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+  <script src="static/js/webflow.js" type="text/javascript"></script>
+  <!-- [if lte IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif] -->
+<script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="dapperbros" data-description="Support me on Buy me a coffee!" data-message="This tool is completely free to use! However, if you feel like supporting our efforts and help us cover our costs for running this, feel free to buy us a coffee!" data-color="#5F7FFF" data-position="Right" data-x_margin="18" data-y_margin="18"></script>
+</body>
+
+</html>
